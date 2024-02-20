@@ -1,33 +1,117 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --my-grad: linear-gradient(
+    270deg,
+    rgba(230, 143, 80, 0.1) 0%,
+    rgba(10, 86, 241, 0.1) 100%
+  );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-1 {
+  background-image: var(--my-grad);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-bg {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.service-card {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  border-radius: 40px;
+  color: rgb(5, 5, 222);
+}
+
+.card-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sol-card {
+  min-width: 18rem;
+  max-width: 19rem;
+  height: 12vh;
+  background-image: var(--my-grad);
+  box-shadow: 0px 5px 10px rgba(3, 45, 129, 0.25);
+  border-radius: 25px;
+  border: 2px white solid;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 30px;
+}
+.sol-card-res {
+  min-width: 18rem;
+  max-width: 19rem;
+  height: 8vh;
+  background-image: var(--my-grad);
+  box-shadow: 0px 5px 10px rgba(3, 45, 129, 0.25);
+  border-radius: 35px;
+  border: 2px white solid;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+.sol-card-res div {
+  font-size: 0.8rem;
+}
+.cardLogo {
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.cardLogo-res{
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.digi-card {
+  width: 350px;
+  height: 60vh;
+  background-image: var(--my-grad);
+  border-radius: 25px;
+  border: 1px blue solid;
+}
+
+.career-card {
+  width: 350px;
+  height: 67vh;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(3, 45, 129, 0.25);
+}
+
+.nav-bar-style {
+  display: flex;
+  flex-direction: row;
+  background-image: var(--my-grad);
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(3, 45, 129, 0.25);
+  font-weight: 700;
+}
+
+.nav-items {
+  margin: 0 15px;
+}
+
+.nav-items-active {
+  background-color: white;
+  padding: 15px;
+  border-radius: 28px;
+  box-shadow: 0px 5px 10px rgba(3, 45, 129, 0.25);
 }
