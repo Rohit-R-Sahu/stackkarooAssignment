@@ -5,7 +5,7 @@ const DigitalService = () => {
   return (
     <Container className="p-5" >
       <div className="text-center fw-bolder fs-1 pb-5">
-        <p style={{ color: "#E68F50" }}>Stackkaroo's Digital Services</p>
+        <p style={{ color: "#E68F50" }}>Stackkaroo&apos;s Digital Services</p>
         <p className="fs-6">
           We excel with reliability, innovation and customer-centric approach
           for our quality products.

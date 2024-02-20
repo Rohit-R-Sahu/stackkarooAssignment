@@ -99,7 +99,7 @@ function CareerFlexbox(props) {
       <Row>
         {props.careerArr.map((item, i) => {
             return(
-          <Col sm={4} className="mb-4">
+          <Col sm={4} className="mb-4" key={i}>
             <div className="career-card p-3 d-flex flex-column justify-content-sm-center align-items-sm-center ">
               <img
                 src={item.img}
